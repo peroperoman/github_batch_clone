@@ -61,6 +61,7 @@ clone_repos(){
 
 ### Main
 load_env
+
 case "$1" in
     user)
         list_repos user 2>/dev/null ;;
@@ -70,6 +71,7 @@ case "$1" in
         display_usage
         exit 1 ;;
 esac
+
 clone_repos
 
 exit 0
